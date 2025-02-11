@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="545.0" prefWidth="537.0" style="-fx-background-color: #f4e395;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafx.EncomendasController.realizar_encomenda">
+   <children>
+      <Text layoutX="162.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Realizar Encomenda">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <Button layoutX="463.0" layoutY="17.0" mnemonicParsing="false" onAction="#voltar_dash" prefHeight="18.0" prefWidth="49.0" style="-fx-background-color: #dcb400;" text="Voltar" />
+      <ComboBox fx:id="combobox_forn" layoutX="285.0" layoutY="105.0" prefWidth="150.0" />
+      <Label layoutX="114.0" layoutY="109.0" text="Fornecedor:" />
+      <Label layoutX="110.0" layoutY="173.0" text="Estado Encomenda:" />
+      <ComboBox fx:id="combobox_estad" layoutX="284.0" layoutY="169.0" prefWidth="150.0" />
+      <Label layoutX="107.0" layoutY="226.0" text="Funcionário:" />
+      <ComboBox fx:id="combobox_fun" layoutX="285.0" layoutY="222.0" prefWidth="150.0" />
+      <Label layoutX="109.0" layoutY="324.0" text="Data Emissão:" />
+      <DatePicker fx:id="data_ini" layoutX="285.0" layoutY="320.0" />
+      <Label layoutX="107.0" layoutY="372.0" text="Data Chegada:" />
+      <DatePicker fx:id="data_chega" layoutX="285.0" layoutY="368.0" />
+      <Label layoutX="110.0" layoutY="273.0" text="Nº Encomenda:" />
+      <TextField fx:id="n_enc" layoutX="285.0" layoutY="269.0" />
+      <Button layoutX="190.0" layoutY="445.0" mnemonicParsing="false" onAction="#realizar_enc" prefHeight="26.0" prefWidth="142.0" style="-fx-background-color: #dcb400;" text="Confirmar" />
+      <Label fx:id="dados" layoutX="137.0" layoutY="409.0" prefHeight="18.0" prefWidth="255.0" textAlignment="CENTER" />
+      <Label fx:id="dataerro" layoutX="285.0" layoutY="346.0" prefHeight="18.0" prefWidth="175.0" />
+   </children>
+</AnchorPane>
